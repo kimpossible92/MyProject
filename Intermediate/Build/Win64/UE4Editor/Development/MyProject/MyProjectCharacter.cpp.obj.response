@@ -230,8 +230,8 @@
 /I Runtime\Experimental\GeometryCollectionSimulationCore\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I "G:\Unreal Projects\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject"
-/I "G:\Unreal Projects\MyProject\Source"
+/I G:\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject
+/I G:\MyProject\Source
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ThirdParty\PhysX3\PxShared\include
@@ -263,12 +263,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"G:\Unreal Projects\MyProject\Intermediate\Build\Win64\MyProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"G:\Unreal Projects\MyProject\Intermediate\Build\Win64\MyProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"G:\Unreal Projects\MyProject\Intermediate\Build\Win64\MyProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"G:\Unreal Projects\MyProject\Source\MyProject\MyProjectCharacter.cpp"
-/FI"G:\Unreal Projects\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h"
-/Fo"G:\Unreal Projects\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\MyProjectCharacter.cpp.obj"
+/FI"G:\MyProject\Intermediate\Build\Win64\MyProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"G:\MyProject\Intermediate\Build\Win64\MyProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"G:\MyProject\Intermediate\Build\Win64\MyProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"G:\MyProject\Source\MyProject\MyProjectCharacter.cpp"
+/FI"G:\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h"
+/Fo"G:\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\MyProjectCharacter.cpp.obj"
 /TP
 /GR-
 /W4

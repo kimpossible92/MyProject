@@ -374,7 +374,7 @@ void AMyProjectCharacter::SpawnBomb()
 void AMyProjectCharacter::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-	Start = FirstPersonCameraComponent->GetComponentLocation();
+	Start = FirstPersonCameraComponent->GetComponentLocation()+FVector(0.0f,35.f,0.0f);
 	ForwardVector = FirstPersonCameraComponent->GetForwardVector(); End = ((ForwardVector * 200.f)+Start);
 	DrawDebugLine(GetWorld(), Start, End, FColor::Green, false, 1, 0, 1);
 	if (!bHoldingItem) 

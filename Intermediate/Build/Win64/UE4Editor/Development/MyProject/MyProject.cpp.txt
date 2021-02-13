@@ -1,2 +1,2 @@
-G:\Unreal Projects\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
-G:\Unreal Projects\MyProject\Source\MyProject\MyProject.h
+G:\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
+G:\MyProject\Source\MyProject\MyProject.h

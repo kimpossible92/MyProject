@@ -1,6 +1,6 @@
-G:\Unreal Projects\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
-G:\Unreal Projects\MyProject\Source\MyProject\FPSBombActor.h
-G:\Unreal Projects\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\FPSBombActor.generated.h
+G:\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
+G:\MyProject\Source\MyProject\FPSBombActor.h
+G:\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\FPSBombActor.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h

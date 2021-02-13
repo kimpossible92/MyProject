@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\MyProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2E9AD112-09E6-4467-A977-3680979814F7}</UniqueIdentifier>
+      <UniqueIdentifier>{2A3D131F-B4FB-432A-AA0F-88CC0A7AF00C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\MyProject.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,10 @@
     <None Include="..\..\Source\MyProjectEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{D43A58D4-7C09-471B-A436-60B9464A6DC2}</UniqueIdentifier>
+      <UniqueIdentifier>{63E65510-D1FF-4421-AE5B-C02FF4461800}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +32,20 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\MyProject">
-      <UniqueIdentifier>{3B498796-2DFA-4F2B-8378-B8EDFCB61FA8}</UniqueIdentifier>
+      <UniqueIdentifier>{528FB5B7-BBF7-484C-A9D3-F287F9DD075B}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\MyProject\EnemyActor.cpp">
+      <Filter>Source\MyProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MyProject\EnemyActor.h">
+      <Filter>Source\MyProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MyProject\FPSBombActor.cpp">
+      <Filter>Source\MyProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MyProject\FPSBombActor.h">
+      <Filter>Source\MyProject</Filter>
+    </ClInclude>
     <None Include="..\..\Source\MyProject\MyProject.Build.cs">
       <Filter>Source\MyProject</Filter>
     </None>
@@ -41,12 +55,12 @@
     <ClInclude Include="..\..\Source\MyProject\MyProject.h">
       <Filter>Source\MyProject</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\MyProject\EnemyActor.h">
-      <Filter>Source\MyProject</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\MyProject\EnemyActor.cpp">
+    <ClCompile Include="..\..\Source\MyProject\MyProjectCharacter.cpp">
       <Filter>Source\MyProject</Filter>
     </ClCompile>
+    <ClInclude Include="..\..\Source\MyProject\MyProjectCharacter.h">
+      <Filter>Source\MyProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\MyProject\MyProjectGameMode.cpp">
       <Filter>Source\MyProject</Filter>
     </ClCompile>
@@ -59,29 +73,17 @@
     <ClInclude Include="..\..\Source\MyProject\MyProjectHUD.h">
       <Filter>Source\MyProject</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\MyProject\Pickup.h">
-      <Filter>Source\MyProject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\MyProject\MyProjectProjectile.h">
-      <Filter>Source\MyProject</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\MyProject\MyProjectProjectile.cpp">
       <Filter>Source\MyProject</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\MyProject\MyProjectCharacter.cpp">
-      <Filter>Source\MyProject</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\MyProject\MyProjectCharacter.h">
+    <ClInclude Include="..\..\Source\MyProject\MyProjectProjectile.h">
       <Filter>Source\MyProject</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\MyProject\Pickup.cpp">
       <Filter>Source\MyProject</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\MyProject\FPSBombActor.h">
+    <ClInclude Include="..\..\Source\MyProject\Pickup.h">
       <Filter>Source\MyProject</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\MyProject\FPSBombActor.cpp">
-      <Filter>Source\MyProject</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

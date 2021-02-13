@@ -1,16 +1,16 @@
-G:\Unreal Projects\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
-G:\Unreal Projects\MyProject\Source\MyProject\MyProjectCharacter.h
+G:\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
+G:\MyProject\Source\MyProject\MyProjectCharacter.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-G:\Unreal Projects\MyProject\Source\MyProject\Pickup.h
+G:\MyProject\Source\MyProject\Pickup.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
-G:\Unreal Projects\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\Pickup.generated.h
-G:\Unreal Projects\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\MyProjectCharacter.generated.h
-G:\Unreal Projects\MyProject\Source\MyProject\MyProjectProjectile.h
-G:\Unreal Projects\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\MyProjectProjectile.generated.h
+G:\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\Pickup.generated.h
+G:\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\MyProjectCharacter.generated.h
+G:\MyProject\Source\MyProject\MyProjectProjectile.h
+G:\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\MyProjectProjectile.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
@@ -44,8 +44,8 @@ C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\HeadMountedDisplay\Pub
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\HeadMountedDisplay\Public\LateUpdateManager.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\MotionControllerComponent.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\HeadMountedDisplay\Public\XRMotionControllerBase.h
-G:\Unreal Projects\MyProject\Source\MyProject\FPSBombActor.h
-G:\Unreal Projects\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\FPSBombActor.generated.h
+G:\MyProject\Source\MyProject\FPSBombActor.h
+G:\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\FPSBombActor.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h

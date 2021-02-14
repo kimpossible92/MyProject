@@ -43,6 +43,21 @@ void EmptyLinkFunctionForGeneratedCodeMyProjectCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bInspecting_MetaData[];
+#endif
+		static void NewProp_bInspecting_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bInspecting;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bHoldingItem_MetaData[];
+#endif
+		static void NewProp_bHoldingItem_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bHoldingItem;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bCanMove_MetaData[];
+#endif
+		static void NewProp_bCanMove_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bCanMove;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentItem_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurrentItem;
@@ -130,6 +145,39 @@ void EmptyLinkFunctionForGeneratedCodeMyProjectCharacter() {}
 		{ "ModuleRelativePath", "MyProjectCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bInspecting_MetaData[] = {
+		{ "Category", "MyProjectCharacter" },
+		{ "ModuleRelativePath", "MyProjectCharacter.h" },
+	};
+#endif
+	void Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bInspecting_SetBit(void* Obj)
+	{
+		((AMyProjectCharacter*)Obj)->bInspecting = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bInspecting = { "bInspecting", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AMyProjectCharacter), &Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bInspecting_SetBit, METADATA_PARAMS(Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bInspecting_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bInspecting_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bHoldingItem_MetaData[] = {
+		{ "Category", "MyProjectCharacter" },
+		{ "ModuleRelativePath", "MyProjectCharacter.h" },
+	};
+#endif
+	void Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bHoldingItem_SetBit(void* Obj)
+	{
+		((AMyProjectCharacter*)Obj)->bHoldingItem = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bHoldingItem = { "bHoldingItem", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AMyProjectCharacter), &Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bHoldingItem_SetBit, METADATA_PARAMS(Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bHoldingItem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bHoldingItem_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bCanMove_MetaData[] = {
+		{ "Category", "MyProjectCharacter" },
+		{ "ModuleRelativePath", "MyProjectCharacter.h" },
+	};
+#endif
+	void Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bCanMove_SetBit(void* Obj)
+	{
+		((AMyProjectCharacter*)Obj)->bCanMove = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bCanMove = { "bCanMove", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AMyProjectCharacter), &Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bCanMove_SetBit, METADATA_PARAMS(Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bCanMove_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bCanMove_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_CurrentItem_MetaData[] = {
 		{ "Category", "MyProjectCharacter" },
@@ -303,6 +351,9 @@ void EmptyLinkFunctionForGeneratedCodeMyProjectCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_Mesh1P = { "Mesh1P", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyProjectCharacter, Mesh1P), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_Mesh1P_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_Mesh1P_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyProjectCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bInspecting,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bHoldingItem,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bCanMove,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_CurrentItem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bUsingMotionControllers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_FireAnimation,
@@ -349,7 +400,7 @@ void EmptyLinkFunctionForGeneratedCodeMyProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyProjectCharacter, 2883128605);
+	IMPLEMENT_CLASS(AMyProjectCharacter, 1053693089);
 	template<> MYPROJECT_API UClass* StaticClass<AMyProjectCharacter>()
 	{
 		return AMyProjectCharacter::StaticClass();

@@ -87,7 +87,12 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	class APickup* CurrentItem;
-	bool bCanMove, bHoldingItem, bInspecting;
+	UPROPERTY(EditAnywhere)
+	bool bCanMove;
+	UPROPERTY(EditAnywhere)
+		bool bHoldingItem;
+	UPROPERTY(EditAnywhere)
+		bool bInspecting;
 	float PitchMax, PitchMin;
 
 	FVector HoldingComp, Start, ForwardVector, End;

@@ -85,7 +85,8 @@ AMyProjectCharacter::AMyProjectCharacter()
 	//HoldComp->RelativeLocation.X = 50.0f;
 	HoldComp->SetupAttachment(FP_MuzzleLocation);
 	CurrentItem = NULL;
-	bCanMove = true; bInspecting = false;
+	bCanMove = true; 
+	bInspecting = false;
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
 }
@@ -232,6 +233,7 @@ void AMyProjectCharacter::OnAction()
 {
 	if (CurrentItem && !bInspecting) {
 		ToggleItemPickup();
+		//GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Blue, FString::Printf(TEXT("hit:%s"), CurrentItem.GetActor()->GetName()));
 	}
 }
 
@@ -374,7 +376,7 @@ void AMyProjectCharacter::SpawnBomb()
 void AMyProjectCharacter::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-	Start = FirstPersonCameraComponent->GetComponentLocation()+FVector(0.0f,35.f,0.0f);
+	Start = FirstPersonCameraComponent->GetComponentLocation();
 	ForwardVector = FirstPersonCameraComponent->GetForwardVector(); End = ((ForwardVector * 200.f)+Start);
 	DrawDebugLine(GetWorld(), Start, End, FColor::Green, false, 1, 0, 1);
 	if (!bHoldingItem) 

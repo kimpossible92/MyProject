@@ -35,7 +35,7 @@ void APickup::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	if (bHolding && HoldComp) {
-		SetActorLocationAndRotation(HoldComp->GetComponentLocation()+FVector(35.0f,35.0f,0.0f), HoldComp->GetComponentRotation());
+		SetActorLocationAndRotation(HoldComp->GetComponentLocation()+FVector(-35.0f,55.0f,0.0f), HoldComp->GetComponentRotation());
 	}
 }
 

@@ -86,7 +86,7 @@ AMyProjectCharacter::AMyProjectCharacter()
 	HoldComp->SetupAttachment(FP_MuzzleLocation);
 	CurrentItem = NULL;
 	bCanMove = true; 
-	bInspecting = false;
+	bInspecting = false; bSpace = true;
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
 }
@@ -131,7 +131,7 @@ void AMyProjectCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	PlayerInputComponent->BindAction("Action", IE_Pressed, this, &AMyProjectCharacter::OnAction);
 	PlayerInputComponent->BindAction("Inspect", IE_Pressed, this, &AMyProjectCharacter::OnInspect);
 	PlayerInputComponent->BindAction("Inspect", IE_Released, this, &AMyProjectCharacter::OnInspectReleased);
-
+	PlayerInputComponent->BindAction("Space1", IE_Pressed, this, &AMyProjectCharacter::OnSpaceButton);
 	// Enable touchscreen input
 	EnableTouchscreenMovement(PlayerInputComponent);
 
@@ -233,7 +233,6 @@ void AMyProjectCharacter::OnAction()
 {
 	if (CurrentItem && !bInspecting) {
 		ToggleItemPickup();
-		//GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Blue, FString::Printf(TEXT("hit:%s"), CurrentItem.GetActor()->GetName()));
 	}
 }
 
@@ -309,7 +308,11 @@ void AMyProjectCharacter::ToggleItemPickup()
 {
 	if (CurrentItem) {
 		bHoldingItem = !bHoldingItem; CurrentItem->Pickup();
-		if (!bHoldingItem) { CurrentItem = NULL; }
+		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Blue, FString::Printf(TEXT("hit1")));
+		if (!bHoldingItem) {
+			CurrentItem = NULL; 
+			GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Blue, FString::Printf(TEXT("hit2")));
+		}
 	}
 }
 
@@ -318,6 +321,7 @@ void AMyProjectCharacter::OnInspect()
 	if (bHoldingItem) {
 		LastRotation = GetControlRotation();
 		ToggleMovement();
+		
 	}
 	else {
 		bInspecting = true;
@@ -337,6 +341,11 @@ void AMyProjectCharacter::OnInspectReleased()
 	{
 		bInspecting = false;
 	}
+}
+
+void AMyProjectCharacter::OnSpaceButton()
+{
+	bSpace=!bSpace;
 }
 
 void AMyProjectCharacter::MoveForward(float Value)
@@ -376,6 +385,7 @@ void AMyProjectCharacter::SpawnBomb()
 void AMyProjectCharacter::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
+	if (bSpace == false) { return; }
 	Start = FirstPersonCameraComponent->GetComponentLocation();
 	ForwardVector = FirstPersonCameraComponent->GetForwardVector(); End = ((ForwardVector * 200.f)+Start);
 	DrawDebugLine(GetWorld(), Start, End, FColor::Green, false, 1, 0, 1);
@@ -414,8 +424,9 @@ void AMyProjectCharacter::Tick(float DeltaSeconds)
 		FirstPersonCameraComponent->SetFieldOfView(FMath::Lerp(FirstPersonCameraComponent->FieldOfView,
 			90.0f, 0.1f));
 		if (bHoldingItem)
-		{
-			HoldComp->SetRelativeLocation(FVector(50.0f, 0.0f, 0.0f));
+		{ 
+			HoldComp->SetRelativeLocation(FVector(FP_MuzzleLocation->GetRelativeLocation().X+50.0f, 0.0f, 
+				FP_MuzzleLocation->GetRelativeLocation().Z));
 		}
 	}
 }

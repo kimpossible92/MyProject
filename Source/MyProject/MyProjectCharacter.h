@@ -93,6 +93,7 @@ public:
 		bool bHoldingItem;
 	UPROPERTY(EditAnywhere)
 		bool bInspecting;
+	bool bSpace;
 	float PitchMax, PitchMin;
 
 	FVector HoldingComp, Start, ForwardVector, End;
@@ -111,6 +112,7 @@ protected:
 	void OnAction();
 	void OnInspect();
 	void OnInspectReleased();
+	void OnSpaceButton();
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
 

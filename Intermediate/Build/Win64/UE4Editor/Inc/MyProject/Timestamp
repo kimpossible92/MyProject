@@ -1,7 +1,8 @@
 G:\MyProject\Source\MyProject\EnemyActor.h
 G:\MyProject\Source\MyProject\FPSBombActor.h
-G:\MyProject\Source\MyProject\MyProjectCharacter.h
 G:\MyProject\Source\MyProject\MyProjectGameMode.h
 G:\MyProject\Source\MyProject\MyProjectHUD.h
 G:\MyProject\Source\MyProject\MyProjectProjectile.h
 G:\MyProject\Source\MyProject\Pickup.h
+G:\MyProject\Source\MyProject\MyProjectCharacter.h
+G:\MyProject\Source\MyProject\MyActorComponent.h

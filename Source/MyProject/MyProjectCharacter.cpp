@@ -86,7 +86,9 @@ AMyProjectCharacter::AMyProjectCharacter()
 	HoldComp->SetupAttachment(FP_MuzzleLocation);
 	CurrentItem = NULL;
 	bCanMove = true; 
-	bInspecting = false; bSpace = true;
+	bHoldingItem = false;
+	bInspecting = false; 
+	bSpace = true;
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
 }
@@ -321,10 +323,11 @@ void AMyProjectCharacter::OnInspect()
 	if (bHoldingItem) {
 		LastRotation = GetControlRotation();
 		ToggleMovement();
-		
+		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("hit:%s"), bInspecting));
 	}
 	else {
 		bInspecting = true;
+		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("hit:%s"), bInspecting));
 	}
 }
 
@@ -418,6 +421,7 @@ void AMyProjectCharacter::Tick(float DeltaSeconds)
 		{
 			FirstPersonCameraComponent->SetFieldOfView(FMath::Lerp(FirstPersonCameraComponent->FieldOfView,
 				45.0f, 0.1f));
+			
 		}
 	}
 	else {
@@ -429,6 +433,11 @@ void AMyProjectCharacter::Tick(float DeltaSeconds)
 				FP_MuzzleLocation->GetRelativeLocation().Z));
 		}
 	}
+}
+
+void AMyProjectCharacter::ApplyDamageMomentum(float DamageTaken, FDamageEvent const DamageEvent)
+{
+
 }
 
 bool AMyProjectCharacter::EnableTouchscreenMovement(class UInputComponent* PlayerInputComponent)

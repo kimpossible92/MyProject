@@ -55,7 +55,10 @@ protected:
 	virtual void BeginPlay();
 	void SpawnBomb();
 	void Tick(float DeltaSeconds) override;
+	void ApplyDamageMomentum(float DamageTaken, FDamageEvent const DamageEvent);
+	
 public:
+
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;

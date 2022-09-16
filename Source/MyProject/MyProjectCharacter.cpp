@@ -85,7 +85,10 @@ AMyProjectCharacter::AMyProjectCharacter()
 	//HoldComp->RelativeLocation.X = 50.0f;
 	HoldComp->SetupAttachment(FP_MuzzleLocation);
 	CurrentItem = NULL;
-	bCanMove = true; bInspecting = false;
+	bCanMove = true; 
+	bHoldingItem = false;
+	bInspecting = false; 
+	bSpace = true;
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
 }
@@ -130,7 +133,7 @@ void AMyProjectCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	PlayerInputComponent->BindAction("Action", IE_Pressed, this, &AMyProjectCharacter::OnAction);
 	PlayerInputComponent->BindAction("Inspect", IE_Pressed, this, &AMyProjectCharacter::OnInspect);
 	PlayerInputComponent->BindAction("Inspect", IE_Released, this, &AMyProjectCharacter::OnInspectReleased);
-
+	PlayerInputComponent->BindAction("Space1", IE_Pressed, this, &AMyProjectCharacter::OnSpaceButton);
 	// Enable touchscreen input
 	EnableTouchscreenMovement(PlayerInputComponent);
 
@@ -307,7 +310,11 @@ void AMyProjectCharacter::ToggleItemPickup()
 {
 	if (CurrentItem) {
 		bHoldingItem = !bHoldingItem; CurrentItem->Pickup();
-		if (!bHoldingItem) { CurrentItem = NULL; }
+		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Blue, FString::Printf(TEXT("hit1")));
+		if (!bHoldingItem) {
+			CurrentItem = NULL; 
+			GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Blue, FString::Printf(TEXT("hit2")));
+		}
 	}
 }
 
@@ -315,10 +322,12 @@ void AMyProjectCharacter::OnInspect()
 {
 	if (bHoldingItem) {
 		LastRotation = GetControlRotation();
-		ToggleMovement();
+		//ToggleMovement();
+		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("hit:%s"), bInspecting));
 	}
 	else {
 		bInspecting = true;
+		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("hit:%s"), bInspecting));
 	}
 }
 
@@ -329,12 +338,17 @@ void AMyProjectCharacter::OnInspectReleased()
 		GetController()->SetControlRotation(LastRotation);
 		GetWorld()->GetFirstPlayerController()->PlayerCameraManager->ViewPitchMax = PitchMax;
 		GetWorld()->GetFirstPlayerController()->PlayerCameraManager->ViewPitchMin = PitchMin;
-		ToggleMovement();
+		//ToggleMovement();
 	}
 	else
 	{
 		bInspecting = false;
 	}
+}
+
+void AMyProjectCharacter::OnSpaceButton()
+{
+	bSpace=!bSpace;
 }
 
 void AMyProjectCharacter::MoveForward(float Value)
@@ -374,9 +388,10 @@ void AMyProjectCharacter::SpawnBomb()
 void AMyProjectCharacter::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
+	if (bSpace == false) { return; }
 	Start = FirstPersonCameraComponent->GetComponentLocation();
 	ForwardVector = FirstPersonCameraComponent->GetForwardVector(); End = ((ForwardVector * 200.f)+Start);
-	DrawDebugLine(GetWorld(), Start, End, FColor::Green, false, 1, 0, 1);
+	//DrawDebugLine(GetWorld(), Start, End, FColor::Green, false, 1, 0, 1);
 	if (!bHoldingItem) 
 	{
 		if (GetWorld()->LineTraceSingleByChannel(Hit, Start, End, ECC_Visibility, DefaultComponentQueryParam, DefaultResponseParams))
@@ -406,16 +421,23 @@ void AMyProjectCharacter::Tick(float DeltaSeconds)
 		{
 			FirstPersonCameraComponent->SetFieldOfView(FMath::Lerp(FirstPersonCameraComponent->FieldOfView,
 				45.0f, 0.1f));
+			
 		}
 	}
 	else {
 		FirstPersonCameraComponent->SetFieldOfView(FMath::Lerp(FirstPersonCameraComponent->FieldOfView,
 			90.0f, 0.1f));
 		if (bHoldingItem)
-		{
-			HoldComp->SetRelativeLocation(FVector(50.0f, 0.0f, 0.0f));
+		{ 
+			HoldComp->SetRelativeLocation(FVector(FP_MuzzleLocation->GetRelativeLocation().X+50.0f, 0.0f, 
+				FP_MuzzleLocation->GetRelativeLocation().Z));
 		}
 	}
+}
+
+void AMyProjectCharacter::ApplyDamageMomentum(float DamageTaken, FDamageEvent const DamageEvent)
+{
+
 }
 
 bool AMyProjectCharacter::EnableTouchscreenMovement(class UInputComponent* PlayerInputComponent)
@@ -426,7 +448,7 @@ bool AMyProjectCharacter::EnableTouchscreenMovement(class UInputComponent* Playe
 		PlayerInputComponent->BindTouch(EInputEvent::IE_Released, this, &AMyProjectCharacter::EndTouch);
 
 		//Commenting this out to be more consistent with FPS BP template.
-		//PlayerInputComponent->BindTouch(EInputEvent::IE_Repeat, this, &AMyProjectCharacter::TouchUpdate);
+		PlayerInputComponent->BindTouch(EInputEvent::IE_Repeat, this, &AMyProjectCharacter::TouchUpdate);
 		return true;
 	}
 	

@@ -158,6 +158,10 @@ void AEnemyActor::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimi
 {
 	if ((OtherActor != NULL) && (OtherActor != this) && (OtherComp != NULL) && OtherComp->IsSimulatingPhysics())
 	{
-		
+		auto DamageActor = Cast<AMyProjectCharacter>(OtherActor);//
+		if (DamageActor) 
+		{
+			//UGameInstance* GameInstance = GetGameInstance(GetWorld()->GetGameInstance());
+		}
 	}
 }

@@ -55,7 +55,10 @@ protected:
 	virtual void BeginPlay();
 	void SpawnBomb();
 	void Tick(float DeltaSeconds) override;
+	void ApplyDamageMomentum(float DamageTaken, FDamageEvent const DamageEvent);
+	
 public:
+
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
@@ -87,7 +90,13 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	class APickup* CurrentItem;
-	bool bCanMove, bHoldingItem, bInspecting;
+	UPROPERTY(EditAnywhere)
+	bool bCanMove;
+	UPROPERTY(EditAnywhere)
+		bool bHoldingItem;
+	UPROPERTY(EditAnywhere)
+		bool bInspecting;
+	bool bSpace;
 	float PitchMax, PitchMin;
 
 	FVector HoldingComp, Start, ForwardVector, End;
@@ -106,6 +115,7 @@ protected:
 	void OnAction();
 	void OnInspect();
 	void OnInspectReleased();
+	void OnSpaceButton();
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
 

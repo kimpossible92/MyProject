@@ -1,6 +1,6 @@
-C:\Users\Pain\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
-C:\Users\Pain\MyProject\Source\MyProject\MyProjectProjectile.h
-C:\Users\Pain\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\MyProjectProjectile.generated.h
+C:\Users\Pain\Documents\git2\ng\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
+C:\Users\Pain\Documents\git2\ng\MyProject\Source\MyProject\MyProjectProjectile.h
+C:\Users\Pain\Documents\git2\ng\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\MyProjectProjectile.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h

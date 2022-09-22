@@ -323,11 +323,11 @@ void AMyProjectCharacter::OnInspect()
 	if (bHoldingItem) {
 		LastRotation = GetControlRotation();
 		//ToggleMovement();
-		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("hit:%s"), bInspecting));
+		//GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("hit:%s"), bInspecting));
 	}
 	else {
 		bInspecting = true;
-		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("hit:%s"), bInspecting));
+		//GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("hit:%s"), bInspecting));
 	}
 }
 

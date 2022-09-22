@@ -1,2 +1,2 @@
-C:\Users\Pain\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
-C:\Users\Pain\MyProject\Source\MyProject\MyProject.h
+C:\Users\Pain\Documents\git2\ng\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
+C:\Users\Pain\Documents\git2\ng\MyProject\Source\MyProject\MyProject.h

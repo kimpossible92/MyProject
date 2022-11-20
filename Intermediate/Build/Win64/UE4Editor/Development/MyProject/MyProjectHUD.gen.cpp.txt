@@ -1,10 +1,10 @@
-C:\Users\Pain\Documents\git2\ng\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\Pain\Documents\git2\ng\MyProject\Source\MyProject/MyProjectHUD.h
+C:\Users\1\Documents\GitHub\MyProject\Source\MyProject/MyProjectHUD.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
-C:\Users\Pain\Documents\git2\ng\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\MyProjectHUD.generated.h
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\MyProjectHUD.generated.h

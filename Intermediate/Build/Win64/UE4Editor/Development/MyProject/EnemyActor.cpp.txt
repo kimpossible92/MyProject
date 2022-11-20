@@ -1,16 +1,16 @@
-C:\Users\Pain\Documents\git2\ng\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
-C:\Users\Pain\Documents\git2\ng\MyProject\Source\MyProject\EnemyActor.h
-C:\Users\Pain\Documents\git2\ng\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\EnemyActor.generated.h
-C:\Users\Pain\Documents\git2\ng\MyProject\Source\MyProject\MyProjectCharacter.h
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
+C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\EnemyActor.h
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\EnemyActor.generated.h
+C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\MyProjectCharacter.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Users\Pain\Documents\git2\ng\MyProject\Source\MyProject\Pickup.h
+C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\Pickup.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
-C:\Users\Pain\Documents\git2\ng\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\Pickup.generated.h
-C:\Users\Pain\Documents\git2\ng\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\MyProjectCharacter.generated.h
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\Pickup.generated.h
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\MyProjectCharacter.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h

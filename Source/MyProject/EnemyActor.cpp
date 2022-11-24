@@ -67,6 +67,7 @@ void AEnemyActor::Tick(float DeltaTime)
 	FCollisionQueryParams collisionParams;
 	DrawDebugLine(GetWorld(), sv, svEnd, FColor::Blue, false, 1, 0, 1);
 	bool ishit = GetWorld()->LineTraceSingleByChannel(hitres, sv, svEnd, ECC_Visibility, collisionParams);
+	if (!Itime) { return; }
 	if (pd <= cDist && resetTime == reset&&ishit)
 	{
 		if (hitres.bBlockingHit) {

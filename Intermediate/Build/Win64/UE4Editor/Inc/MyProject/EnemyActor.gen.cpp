@@ -233,6 +233,11 @@ void EmptyLinkFunctionForGeneratedCodeEnemyActor() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MyCollisionSphere;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Itime_MetaData[];
+#endif
+		static void NewProp_Itime_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_Itime;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_rb_MetaData[];
 #endif
 		static void NewProp_rb_SetBit(void* Obj);
@@ -280,6 +285,17 @@ void EmptyLinkFunctionForGeneratedCodeEnemyActor() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemyActor_Statics::NewProp_MyCollisionSphere = { "MyCollisionSphere", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemyActor, MyCollisionSphere), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEnemyActor_Statics::NewProp_MyCollisionSphere_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyActor_Statics::NewProp_MyCollisionSphere_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyActor_Statics::NewProp_Itime_MetaData[] = {
+		{ "Category", "Gameplay" },
+		{ "ModuleRelativePath", "EnemyActor.h" },
+	};
+#endif
+	void Z_Construct_UClass_AEnemyActor_Statics::NewProp_Itime_SetBit(void* Obj)
+	{
+		((AEnemyActor*)Obj)->Itime = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AEnemyActor_Statics::NewProp_Itime = { "Itime", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AEnemyActor), &Z_Construct_UClass_AEnemyActor_Statics::NewProp_Itime_SetBit, METADATA_PARAMS(Z_Construct_UClass_AEnemyActor_Statics::NewProp_Itime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyActor_Statics::NewProp_Itime_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyActor_Statics::NewProp_rb_MetaData[] = {
 		{ "Category", "EnemyActor" },
 		{ "ModuleRelativePath", "EnemyActor.h" },
@@ -306,6 +322,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyActor() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemyActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyActor_Statics::NewProp_Mesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyActor_Statics::NewProp_MyCollisionSphere,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyActor_Statics::NewProp_Itime,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyActor_Statics::NewProp_rb,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyActor_Statics::NewProp_plpawn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyActor_Statics::NewProp_NewAnimation,
@@ -337,7 +354,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemyActor, 720089801);
+	IMPLEMENT_CLASS(AEnemyActor, 2544019410);
 	template<> MYPROJECT_API UClass* StaticClass<AEnemyActor>()
 	{
 		return AEnemyActor::StaticClass();

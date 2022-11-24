@@ -30,6 +30,8 @@ public:
 		APawn* plpawn;
 	UPROPERTY(EditAnywhere)
 	bool rb;
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = Gameplay)
+		bool Itime;
 	UPROPERTY(VisibleAnywhere)
 	class USphereComponent* MyCollisionSphere;
 	UFUNCTION()

@@ -1,11 +1,11 @@
 C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\TP_TwinStick\TP_TwinStickGameMode.h
-C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\TP_TwinStick\TP_TwinStickProjectile.h
 C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\TP_TwinStick\TP_TwinStickPawn.h
-C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\EnemyActor.h
+C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\TP_TwinStick\TP_TwinStickProjectile.h
 C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\FPSBombActor.h
 C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\MyActorComponent.h
+C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\MyProjectCharacter.h
 C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\MyProjectGameMode.h
 C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\MyProjectHUD.h
-C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\MyProjectCharacter.h
-C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\MyProjectProjectile.h
 C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\Pickup.h
+C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\MyProjectProjectile.h
+C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\EnemyActor.h

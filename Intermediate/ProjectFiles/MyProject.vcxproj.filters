@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\MyProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{B91B33B2-5DAE-4A1F-B806-47E523F0C063}</UniqueIdentifier>
+      <UniqueIdentifier>{19030CF9-6F1D-430F-B10A-B07C578612B2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\MyProject.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{39AC6061-8212-4864-B141-3745948BE8A5}</UniqueIdentifier>
+      <UniqueIdentifier>{3C41513E-A4DE-4B64-B2FD-B75D2ACC82F9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\MyProject">
-      <UniqueIdentifier>{92ED1A4E-D341-4B2F-80A9-1294C714B60A}</UniqueIdentifier>
+      <UniqueIdentifier>{3ABA5D7D-8BFF-4618-96A9-58AE50004BF6}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\MyProject\EnemyActor.cpp">
       <Filter>Source\MyProject</Filter>
@@ -91,8 +91,35 @@
     <ClInclude Include="..\..\Source\MyProject\Pickup.h">
       <Filter>Source\MyProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\MyProject\TP_HandAnimInstance.cpp">
+      <Filter>Source\MyProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MyProject\TP_HandAnimInstance.h">
+      <Filter>Source\MyProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MyProject\TP_InteractionInterface.cpp">
+      <Filter>Source\MyProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MyProject\TP_InteractionInterface.h">
+      <Filter>Source\MyProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MyProject\TP_MotionController.cpp">
+      <Filter>Source\MyProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MyProject\TP_MotionController.h">
+      <Filter>Source\MyProject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\MyProject\TP_Variables.h">
+      <Filter>Source\MyProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MyProject\TP_VirtualRealityPawn_Motion.cpp">
+      <Filter>Source\MyProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MyProject\TP_VirtualRealityPawn_Motion.h">
+      <Filter>Source\MyProject</Filter>
+    </ClInclude>
     <Filter Include="Source\MyProject\TP_TwinStick">
-      <UniqueIdentifier>{CBDB41DD-560D-4CCB-8B62-959B2A994DCB}</UniqueIdentifier>
+      <UniqueIdentifier>{9DA32F65-844F-4CC9-B7C5-E98A84DA1F58}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\MyProject\TP_TwinStick\TP_TwinStick.h">
       <Filter>Source\MyProject\TP_TwinStick</Filter>

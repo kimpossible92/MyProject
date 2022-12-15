@@ -1,0 +1,3 @@
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
+C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\ATP_VirtualRealityPawn_Motion.h
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\ATP_VirtualRealityPawn_Motion.generated.h

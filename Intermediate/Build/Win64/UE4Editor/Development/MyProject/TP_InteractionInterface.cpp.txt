@@ -1,0 +1,3 @@
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
+C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\TP_InteractionInterface.h
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\TP_InteractionInterface.generated.h

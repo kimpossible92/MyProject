@@ -1,0 +1,11 @@
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h
+C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\VirtualReality\TP_VRGameModeBaseCPP.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\TP_VRGameModeBaseCPP.generated.h
+C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\VirtualReality\TP_VirtualRealityPawn_Motion.h
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\TP_VirtualRealityPawn_Motion.generated.h
+C:\Users\1\Documents\GitHub\MyProject\Source\MyProject\VirtualReality\TP_VirtualRealityPawn_GamePad.h
+C:\Users\1\Documents\GitHub\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject\TP_VirtualRealityPawn_GamePad.generated.h

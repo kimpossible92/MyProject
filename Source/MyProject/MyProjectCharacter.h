@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Pickup.h"
+#include "WeaponBullet.h"
 #include "MyProjectCharacter.generated.h"
 
 class UInputComponent;
@@ -16,7 +17,7 @@ class AMyProjectCharacter : public ACharacter
 	GENERATED_BODY()
 
 	/** Pawn mesh: 1st person view (arms; seen only by self) */
-	UPROPERTY(VisibleDefaultsOnly, Category=Mesh)
+	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 	class USkeletalMeshComponent* Mesh1P;
 
 	/** Gun mesh: 1st person view (seen only by self) */
@@ -94,6 +95,10 @@ public:
 	bool bCanMove;
 	UPROPERTY(EditAnywhere)
 		bool bHoldingItem;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Actor)
+		int bulletCounts;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+	class AWeaponBullet* weaponBullet;
 	UPROPERTY(EditAnywhere)
 		bool bInspecting;
 	bool bSpace;
@@ -105,11 +110,12 @@ public:
 	FComponentQueryParams DefaultComponentQueryParam;
 	FCollisionResponseParams DefaultResponseParams;
 
+
 protected:
 	
 	/** Fires a projectile. */
 	void OnFire();
-
+	void OnShotWeapon();
 	/** Resets HMD orientation and position in VR. */
 	void OnResetVR();
 	void OnAction();

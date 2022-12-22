@@ -84,11 +84,12 @@ AMyProjectCharacter::AMyProjectCharacter()
 	HoldComp = CreateDefaultSubobject<USceneComponent>(TEXT("HoldingComponent"));
 	//HoldComp->RelativeLocation.X = 50.0f;
 	HoldComp->SetupAttachment(FP_MuzzleLocation);
-	CurrentItem = NULL;
+	CurrentItem = NULL; weaponBullet = NULL;
 	bCanMove = true; 
 	bHoldingItem = false;
 	bInspecting = false; 
 	bSpace = true;
+	bulletCounts = 2;
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
 }
@@ -180,6 +181,7 @@ void AMyProjectCharacter::OnFire()
 			}
 		}
 	}
+	if (bulletCounts <= 0) { return; }
 	// try and fire a projectile
 	if (ProjectileClass != NULL)
 	{
@@ -224,6 +226,14 @@ void AMyProjectCharacter::OnFire()
 			AnimInstance->Montage_Play(FireAnimation, 1.f);
 		}
 	}
+}
+
+void AMyProjectCharacter::OnShotWeapon()
+{
+	//Check is menu
+	bool isOpen = true;
+	if (!isOpen) { return; }
+	
 }
 
 void AMyProjectCharacter::OnResetVR()

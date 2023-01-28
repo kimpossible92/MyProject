@@ -165,6 +165,10 @@ void AMyProjectCharacter::OnFire()
 	if (ishit) {
 		if (hitres.bBlockingHit) {
 			if (GEngine) {
+				if (FireSound != NULL)
+				{
+					UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+				}
 				GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("hit:%s"), *hitres.GetActor()->GetName()));
 				//AEnemyActor pCas = Cast<AEnemyActor>(*hitres.GetActor());
 				if (hitres.GetActor()->ActorHasTag(enemyTag))

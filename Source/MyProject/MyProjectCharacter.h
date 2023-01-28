@@ -95,7 +95,7 @@ public:
 	bool bCanMove;
 	UPROPERTY(EditAnywhere)
 		bool bHoldingItem;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Actor)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Actor)
 		int bulletCounts;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	class AWeaponBullet* weaponBullet;

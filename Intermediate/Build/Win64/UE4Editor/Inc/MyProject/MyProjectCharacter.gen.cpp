@@ -178,7 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeMyProjectCharacter() {}
 		{ "ModuleRelativePath", "MyProjectCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bulletCounts = { "bulletCounts", nullptr, (EPropertyFlags)0x0010000000020005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyProjectCharacter, bulletCounts), METADATA_PARAMS(Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bulletCounts_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bulletCounts_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bulletCounts = { "bulletCounts", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyProjectCharacter, bulletCounts), METADATA_PARAMS(Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bulletCounts_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bulletCounts_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyProjectCharacter_Statics::NewProp_bHoldingItem_MetaData[] = {
 		{ "Category", "MyProjectCharacter" },
@@ -425,7 +425,7 @@ void EmptyLinkFunctionForGeneratedCodeMyProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyProjectCharacter, 3567723045);
+	IMPLEMENT_CLASS(AMyProjectCharacter, 2233832303);
 	template<> MYPROJECT_API UClass* StaticClass<AMyProjectCharacter>()
 	{
 		return AMyProjectCharacter::StaticClass();

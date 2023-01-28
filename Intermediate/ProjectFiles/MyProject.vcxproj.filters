@@ -92,33 +92,6 @@
     <ClInclude Include="..\..\Source\MyProject\Pickup.h">
       <Filter>Source\MyProject</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\MyProject\TP_HandAnimInstance.cpp">
-      <Filter>Source\MyProject</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\MyProject\TP_HandAnimInstance.h">
-      <Filter>Source\MyProject</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\MyProject\TP_InteractionInterface.cpp">
-      <Filter>Source\MyProject</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\MyProject\TP_InteractionInterface.h">
-      <Filter>Source\MyProject</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\MyProject\TP_MotionController.cpp">
-      <Filter>Source\MyProject</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\MyProject\TP_MotionController.h">
-      <Filter>Source\MyProject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\MyProject\TP_Variables.h">
-      <Filter>Source\MyProject</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\MyProject\TP_VirtualRealityPawn_Motion.cpp">
-      <Filter>Source\MyProject</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\MyProject\TP_VirtualRealityPawn_Motion.h">
-      <Filter>Source\MyProject</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\MyProject\WeaponBullet.cpp">
       <Filter>Source\MyProject</Filter>
     </ClCompile>

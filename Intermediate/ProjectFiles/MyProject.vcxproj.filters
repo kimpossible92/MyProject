@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\MyProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{ED0E0EEB-3229-40F2-85EA-371A3CCF5748}</UniqueIdentifier>
+      <UniqueIdentifier>{D3F7C7E1-DD37-4384-ADEF-B00D6B198EED}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\MyProject.Target.cs">
       <Filter>Source</Filter>
@@ -15,7 +15,7 @@
     <None Include="..\..\.gitignore" />
     <None Include="..\..\Galls.zip" />
     <Filter Include="Config">
-      <UniqueIdentifier>{B391C5EB-37C7-46DB-9BE3-054EF068F231}</UniqueIdentifier>
+      <UniqueIdentifier>{CDD8EF7B-DA91-4ED2-8EE8-24B2AE8EADB6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -33,12 +33,18 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\MyProject">
-      <UniqueIdentifier>{F67B51DD-5172-47A2-A48B-3F8FC3873921}</UniqueIdentifier>
+      <UniqueIdentifier>{25142F35-69B4-49F3-9ADB-A12B5493F8D8}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\MyProject\EnemyActor.cpp">
       <Filter>Source\MyProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\MyProject\EnemyActor.h">
+      <Filter>Source\MyProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MyProject\EnemyComp.cpp">
+      <Filter>Source\MyProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MyProject\EnemyComp.h">
       <Filter>Source\MyProject</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\MyProject\FPSBombActor.cpp">
@@ -99,7 +105,7 @@
       <Filter>Source\MyProject</Filter>
     </ClInclude>
     <Filter Include="Source\MyProject\TP_TwinStick">
-      <UniqueIdentifier>{9593A164-5A73-4DA1-808A-8D0BD217F3FC}</UniqueIdentifier>
+      <UniqueIdentifier>{365E573F-035E-4469-AF44-7B55B106FD36}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\MyProject\TP_TwinStick\TP_TwinStick.h">
       <Filter>Source\MyProject\TP_TwinStick</Filter>
@@ -122,6 +128,5 @@
     <ClInclude Include="..\..\Source\MyProject\TP_TwinStick\TP_TwinStickProjectile.h">
       <Filter>Source\MyProject\TP_TwinStick</Filter>
     </ClInclude>
-    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>
